@@ -17,6 +17,7 @@ nlu:
       - goodevening
       - good afternoon
       - xin chào
+      - chào
 
   - intent: askname
     examples: |
@@ -45,7 +46,7 @@ nlu:
 
   - intent: deny
     examples: |
-      - no
+      - no 
       - n
       - never
       - I don't think so
