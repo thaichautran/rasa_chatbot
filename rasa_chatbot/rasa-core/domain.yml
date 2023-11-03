@@ -5,33 +5,43 @@ intents:
   - goodbye
   - affirm
   - deny
-  - mood_great
-  - mood_unhappy
+  - ask_weather
+  - ask_location
+  - weather_location
   - bot_challenge
-  - askname
+  - utter_thanks
+
+entities:
+  - location
+
+slots:
+  location:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: location
 
 responses:
-  utter_greet:
-    - text: "Hey! How are you?"
+  utter_greet_back:
+    - text: "Hey there!!! Hope you are doing good."
 
-  utter_askname:
-    - text: "Chào Châu, tôi là trợ lý ảo hỗ trợ việc học tiếng anh của bạn"
+  utter_welcome:
+    - text: "Welcome, I am weather bot"
 
-  utter_cheer_up:
-    - text: "Here is something to cheer you up:"
-      image: "https://static2-images.vnncdn.net/files/publish/2022/12/8/meo-1-1416.jpg"
+  utter_ask_location:
+    - text: "May i know for which location?"
 
-  utter_did_that_help:
-    - text: "Did that help you?"
-
-  utter_happy:
-    - text: "Great, carry on!"
+  utter_thanks:
+    - text: Welcome, will be always there to help!!!
 
   utter_goodbye:
-    - text: "Bye"
+    - text: "we can catch up again"
 
   utter_iamabot:
-    - text: "I am a bot, powered by Rasa."
+    - text: "I am a weather bot, created by karthik."
+
+actions:
+  - action_get_weather
 
 session_config:
   session_expiration_time: 60
