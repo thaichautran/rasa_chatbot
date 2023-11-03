@@ -16,15 +16,10 @@ nlu:
       - goodmorning
       - goodevening
       - good afternoon
-      - xin chào
-      - chào
-
-  - intent: askname
-    examples: |
-      - bạn tên gì
 
   - intent: goodbye
     examples: |
+      - cu
       - good by
       - cee you later
       - good night
@@ -46,7 +41,7 @@ nlu:
 
   - intent: deny
     examples: |
-      - no 
+      - no
       - n
       - never
       - I don't think so
@@ -54,39 +49,44 @@ nlu:
       - no way
       - not really
 
-  - intent: mood_great
+  - intent: ask_weather
     examples: |
-      - perfect
-      - great
-      - amazing
-      - feeling like a king
-      - wonderful
-      - I am feeling very good
-      - I am great
-      - I am amazing
-      - I am going to save the world
-      - super stoked
-      - extremely good
-      - so so perfect
-      - so good
-      - so perfect
+      - tell me the weather
+      - what is the weather today?
+      - tell me the temperature
+      - what is the temperature today
+      - how is the weather today?
+      - how is the temperature today?
 
-  - intent: mood_unhappy
+  - intent: ask_location
     examples: |
-      - my day was horrible
-      - I am sad
-      - I don't feel very well
-      - I am disappointed
-      - super sad
-      - I'm so sad
-      - sad
-      - very sad
-      - unhappy
-      - not good
-      - not very good
-      - extremly sad
-      - so saad
-      - so sad
+      - [mumbai](location)
+      - [delhi](location)
+      - [bangalore](location)
+      - [hyderbad](location)
+      - [trivanduram](location)
+      - [chennai](location)
+      - [Hanoi](location)
+      - [Ho Chi Minh City](location)
+      - [Danang](location)
+      - [Viet Tri](location)
+
+  - intent: weather_location
+    examples: |
+      - what is the weather today in [delhi](location)
+      - tell me the weather in [mumbai](location)
+      - tell me the weather in [Hanoi](location)
+      - what is the weather today in [bangalore](location)
+      - tell me the temperature in [chennai](location)
+      - what is the temperature today in [kolkata](location)
+      - how is the weather today in [hyderbad](location)
+      - how is the temperature today in [thiruvandrum](location)
+
+  - intent: thanks
+    examples: |
+      - thanks
+      - thank you
+      - OK
 
   - intent: bot_challenge
     examples: |
