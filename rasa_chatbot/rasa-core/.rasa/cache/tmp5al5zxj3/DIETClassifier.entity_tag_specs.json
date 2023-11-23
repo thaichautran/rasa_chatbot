@@ -1,0 +1,28 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-forecast_period",
+      "2": "I-forecast_period",
+      "3": "L-forecast_period",
+      "4": "U-forecast_period",
+      "5": "B-location",
+      "6": "I-location",
+      "7": "L-location",
+      "8": "U-location",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-forecast_period": 1,
+      "I-forecast_period": 2,
+      "L-forecast_period": 3,
+      "U-forecast_period": 4,
+      "B-location": 5,
+      "I-location": 6,
+      "L-location": 7,
+      "U-location": 8,
+      "O": 0
+    },
+    "num_tags": 9
+  }
+]

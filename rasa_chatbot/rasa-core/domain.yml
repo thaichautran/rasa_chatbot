@@ -13,6 +13,7 @@ intents:
 
 entities:
   - location
+  - forecast_period
 
 slots:
   location:
@@ -20,6 +21,15 @@ slots:
     mappings:
       - type: from_entity
         entity: location
+  forecast_period:
+    type: categorical
+    mappings:
+      - type: from_entity
+        entity: forecast_period
+    values:
+      - tomorrow
+      - today
+      - next 2 days
 
 responses:
   utter_greet_back:
@@ -38,7 +48,7 @@ responses:
     - text: "we can catch up again"
 
   utter_iamabot:
-    - text: "I am a weather bot, created by karthik."
+    - text: "I am a weather bot, created by Châu."
 
 actions:
   - action_get_weather

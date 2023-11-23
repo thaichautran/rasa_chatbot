@@ -1,0 +1,23 @@
+{
+  "currently": "current",
+  "current": "current",
+  "now": "current",
+  "later": "today",
+  "today": "today",
+  "later today": "today",
+  "going to": "today",
+  "tomorrow": "tomorrow",
+  "next 2 days": "next 2 days",
+  "mumbai": "mumbai",
+  "delhi": "delhi",
+  "bangalore": "bangalore",
+  "hyderbad": "hyderbad",
+  "trivanduram": "trivanduram",
+  "chennai": "chennai",
+  "hanoi": "Hanoi",
+  "ho chi minh city": "Ho Chi Minh City",
+  "danang": "Danang",
+  "viet tri": "Viet Tri",
+  "kolkata": "kolkata",
+  "thiruvandrum": "thiruvandrum"
+}
