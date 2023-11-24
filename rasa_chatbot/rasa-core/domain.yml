@@ -1,28 +1,35 @@
 version: "3.1"
-
 intents:
-  - greet
-  - goodbye
   - affirm
-  - deny
-  - ask_weather
   - ask_location
-  - weather_location
+  - ask_weather
   - bot_challenge
+  - deny
+  - goodbye
+  - greet
   - utter_thanks
-
+  - weather_location
+synonyms:
+  - current
+  - today
+  - tomorrow
+  - next 2 days
+  - temperature
+  - humidity
 entities:
   - location
   - forecast_period
-
+  - weather_type
 slots:
   location:
     type: text
+    influence_conversation: true
     mappings:
       - type: from_entity
         entity: location
   forecast_period:
     type: categorical
+    influence_conversation: true
     mappings:
       - type: from_entity
         entity: forecast_period
@@ -31,27 +38,42 @@ slots:
       - today
       - next 2 days
 
+  weather_type:
+    type: categorical
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: weather_type
+    values:
+      - weather
+      - wind
+      - temperature
+      - humidity
+
 responses:
   utter_greet_back:
-    - text: "Hey there!!! Hope you are doing good."
-
+    - text: Hey there!!! Hope you are doing good.
   utter_welcome:
-    - text: "Welcome, I am weather bot"
-
+    - text: Welcome, I am weather bot
   utter_ask_location:
-    - text: "May i know for which location?"
-
+    - text: May i know for which location?
+  utter_repeat_location:
+    - text: Do you mean {location}, right?
+  utter_repeat_forecast_period:
+    - text: Oh, weather {forecast_period} right?
   utter_thanks:
     - text: Welcome, will be always there to help!!!
-
   utter_goodbye:
-    - text: "we can catch up again"
-
+    - text: we can catch up again
   utter_iamabot:
-    - text: "I am a weather bot, created by Châu."
-
+    - text: I am a weather bot, created by Châu.
 actions:
+  - utter_greet_back
+  - utter_welcome
   - action_get_weather
+  - utter_repeat_location
+  - utter_ask_location
+  - utter_repeat_forecast_period
 
 session_config:
   session_expiration_time: 60
