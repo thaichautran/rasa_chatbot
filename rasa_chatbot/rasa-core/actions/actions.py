@@ -85,7 +85,7 @@ class action_get_weather(Action):
                         elif weatherType == 'humidity':
                             response = """The humidity tomorrow is {}% in morning, {}% in afternoon and the evening is {}%""".format(morning[0]['main']['humidity'], afternoon[0]['main']['humidity'], evening[0]['main']['humidity'])
                         elif weatherType == 'wind':
-                            response =  """The wind today is {} mph with deg is {} and gust is {} in the morning, is {} mph with deg is {} and gust is {} in the afternoon and last {} mph with deg is {} and gust is {} in the evening""".format(morning[0]['wind']['speed'],  morning[0]['wind']['deg'], morning[0]['wind']['gust'], afternoon[0]['wind']['speed'], afternoon[0]['wind']['deg'], afternoon[0]['wind']['gust'], evening[0]['wind']['speed'], evening[0]['wind']['deg'], evening[0]['wind']['gust'])
+                            response =  """The wind tomorrow is {} mph with deg is {} and gust is {} in the morning, is {} mph with deg is {} and gust is {} in the afternoon and the last: {} mph with deg is {} and gust is {} in the evening""".format(morning[0]['wind']['speed'],  morning[0]['wind']['deg'], morning[0]['wind']['gust'], afternoon[0]['wind']['speed'], afternoon[0]['wind']['deg'], afternoon[0]['wind']['gust'], evening[0]['wind']['speed'], evening[0]['wind']['deg'], evening[0]['wind']['gust'])
                         
                     elif forecastPeriod == 'next 2 days':
                         ##next 2 days 
@@ -105,7 +105,7 @@ class action_get_weather(Action):
                         elif weatherType == 'humidity':
                             response = """The humidity next 2 days is {}% in morning, {}% in afternoon and the evening is {}%""".format(morning[0]['main']['humidity'], afternoon[0]['main']['humidity'], evening[0]['main']['humidity'])
                         elif weatherType == 'wind':
-                            response =  """The wind next two days is {} mph with deg is {} and gust is {} in the morning, is {} mph with deg is {} and gust is {} in the afternoon and last {} mph with deg is {} and gust is {} in the evening""".format(morning[0]['wind']['speed'],  morning[0]['wind']['deg'], morning[0]['wind']['gust'], afternoon[0]['wind']['speed'], afternoon[0]['wind']['deg'], afternoon[0]['wind']['gust'], evening[0]['wind']['speed'], evening[0]['wind']['deg'], evening[0]['wind']['gust'])
+                            response =  """The wind next two days is {} mph with deg is {} and gust is {} in the morning, is {} mph with deg is {} and gust is {} in the afternoon and the last: {} mph with deg is {} and gust is {} in the evening""".format(morning[0]['wind']['speed'],  morning[0]['wind']['deg'], morning[0]['wind']['gust'], afternoon[0]['wind']['speed'], afternoon[0]['wind']['deg'], afternoon[0]['wind']['gust'], evening[0]['wind']['speed'], evening[0]['wind']['deg'], evening[0]['wind']['gust'])
                     else: 
                         response = """sorry, I can only forecast the weather within 2 days"""
                 else:

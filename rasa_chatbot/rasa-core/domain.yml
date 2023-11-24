@@ -9,6 +9,7 @@ intents:
   - greet
   - utter_thanks
   - weather_location
+
 synonyms:
   - current
   - today
@@ -55,12 +56,6 @@ responses:
     - text: Hey there!!! Hope you are doing good.
   utter_welcome:
     - text: Welcome, I am weather bot
-  utter_ask_location:
-    - text: May i know for which location?
-  utter_repeat_location:
-    - text: Do you mean {location}, right?
-  utter_repeat_forecast_period:
-    - text: Oh, weather {forecast_period} right?
   utter_thanks:
     - text: Welcome, will be always there to help!!!
   utter_goodbye:
@@ -71,9 +66,6 @@ actions:
   - utter_greet_back
   - utter_welcome
   - action_get_weather
-  - utter_repeat_location
-  - utter_ask_location
-  - utter_repeat_forecast_period
 
 session_config:
   session_expiration_time: 60

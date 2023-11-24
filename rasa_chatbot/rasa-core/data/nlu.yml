@@ -44,6 +44,7 @@ nlu:
       - don't like that
       - no way
       - not really
+
   - intent: ask_weather
     examples: |
       - [weather](weather_type) today
@@ -80,6 +81,7 @@ nlu:
       - [wind](weather_type) [today](forecast_period)
       - [temperature](weather_type) [today](forecast_period)
       - [humidity](weather_type) [today](forecast_period)
+
   - intent: ask_location
     examples: |
       - [mumbai](location)
@@ -95,6 +97,7 @@ nlu:
       - [Phu Tho](location)
       - [Thanh Hoa](location)
       - [hanoi]{"entity": "location", "value": "Hanoi"}
+
   - intent: weather_location
     examples: |
       - what is the [weather](weather_type) [today](forecast_period) in [delhi](location)
@@ -125,6 +128,7 @@ nlu:
       - what is the [wind](weather_type) in [Danang](location) [today](forecast_period)
       - how about the [wind](weather_type) in [Danang](location) [tomorrow](forecast_period)
       - tell me the [wind](weather_type) in [Hanoi](location) [next 2 days]
+
   - intent: thanks
     examples: |
       - thanks

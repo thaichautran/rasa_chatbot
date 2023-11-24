@@ -26,6 +26,16 @@ stories:
       - intent: goodbye
       - action: utter_goodbye
 
+  - story: weather3
+    steps:
+      - intent: greet
+      - action: utter_greet_back
+      - action: utter_welcome
+      - intent: ask_location
+      - action: action_get_weather
+      - intent: goodbye
+      - action: utter_goodbye
+
   - story: bot
     steps:
       - intent: bot_challenge
