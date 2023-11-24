@@ -5,7 +5,7 @@ import ChatBot from "./components/ChatBot";
 function App() {
   return (
     <div className="App">
-      <h1>Chatbot for learning English</h1>
+      <h1>Chatbot Assistant</h1>
       <ChatBot />
     </div>
   );
