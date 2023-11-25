@@ -81,7 +81,20 @@ nlu:
       - [wind](weather_type) [today](forecast_period)
       - [temperature](weather_type) [today](forecast_period)
       - [humidity](weather_type) [today](forecast_period)
-
+      - [rain](weather_type)
+      - [sunny](weather_type)
+      - [storm](weather_type)
+      - [snow](weather_type)
+      - [when](guess) will be [sunny](weather_type) [next 2 days](forecast_period)
+      - [when](guess) will be [sunny](weather_type) in [next 2 days](forecast_period)
+      - [when](guess) will be [rain](weather_type) in [next two days]{"entity": "forecast_period", "value": "next 2 days"}
+      - [when](guess) will be [storm](weather_type) in [next 2 days](forecast_period)
+      - [when](guess) will be [snow](weather_type) in [next two days]{"entity": "forecast_period", "value": "next 2 days"}
+      - Have [sunny](weather_type) in [next 2 days](forecast_period)
+      - Have [sunny](weather_type) [next 2 days](forecast_period)
+      - Have [rain](weather_type) in [next two days]{"entity": "forecast_period", "value": "next 2 days"}
+      - [when](guess) will have [sunny](weather_type) in [next 2 days](forecast_period)
+      - [when](guess) will have [rain](weather_type) in [next two days]{"entity": "forecast_period", "value": "next 2 days"}
   - intent: ask_location
     examples: |
       - [mumbai](location)
@@ -128,6 +141,20 @@ nlu:
       - what is the [wind](weather_type) in [Danang](location) [today](forecast_period)
       - how about the [wind](weather_type) in [Danang](location) [tomorrow](forecast_period)
       - tell me the [wind](weather_type) in [Hanoi](location) [next 2 days]
+      - [when](guess) will be [sunny](weather_type) [next 2 days](forecast_period) in [Hanoi](location)
+      - [when](guess) will be [sunny](weather_type) in [next 2 days](forecast_period) in [Danang](location)
+      - [when](guess) will be [rain](weather_type) in [Ho Chi Minh City](location) [next two days]{"entity": "forecast_period", "value": "next 2 days"}
+      - [when](guess) will be [storm](weather_type) in [Hanoi](location) [next 2 days](forecast_period)
+      - [when](guess) will be [snow](weather_type) in [next two days]{"entity": "forecast_period", "value": "next 2 days"} [Hanoi](location)
+      - Have [sunny](weather_type) in [Hanoi](location) [next 2 days](forecast_period)
+      - Have [sunny](weather_type) in [Hanoi](location) [next 2 days](forecast_period)
+      - Have [rain](weather_type) in [next two days]{"entity": "forecast_period", "value": "next 2 days"}
+      - [when](guess) will have [sunny](weather_type) in [next 2 days](forecast_period) in [Hanoi](location)
+      - [when](guess) will have [rain](weather_type) in [Hanoi](location) in [next two days]{"entity": "forecast_period", "value": "next 2 days"}
+      - Is [sunny](weather_type) [tomorrow]{"entity": "forecast_period"} in [Hanoi](location)
+      - Is [rain](weather_type) in [Hanoi](location) [tomorrow]{"entity": "forecast_period"}
+      - Is [sunny](weather_type) [tomorrow]{"entity": "forecast_period"} in [Hanoi](location)
+      - Is [snow](weather_type) in [Hanoi](location) [tomorrow]{"entity": "forecast_period"}
 
   - intent: thanks
     examples: |
