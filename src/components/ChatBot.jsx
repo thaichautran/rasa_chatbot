@@ -110,7 +110,7 @@ function Basic() {
         <div className="row justify-content-center">
           <div className="card" style={stylecard}>
             <div className="cardHeader text-white" style={styleHeader}>
-              <h1 style={{ marginBottom: "0px" }}>AI Assistant</h1>
+              <h1 style={{ marginBottom: "0px" }}>Chatbot Assistant</h1>
             </div>
             <div className="cardBody" id="messageArea" style={styleBody}>
               <div className="row msgarea">
