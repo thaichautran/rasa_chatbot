@@ -9,6 +9,7 @@ intents:
   - greet
   - utter_thanks
   - weather_location
+  - yen
 
 synonyms:
   - current
@@ -65,14 +66,27 @@ slots:
       - snow
 
 responses:
+
   utter_greet_back:
     - text: Hey there!!! Hope you are doing good.
+    - text: Hey there!!! Hope you are doing good. How can I assist you today?
+    - text: Hello! It's great to see you. How can I help you today? If you're curious about the weather, just let me know!
+    - text: Hi there! I'm here to help with any weather-related inquiries. What can I do for you today?
   utter_welcome:
     - text: Welcome, I am weather bot
+    - text: Welcome! I'm your friendly weather bot, here to provide you with the latest weather information. Ask me about the weather in different locations and time periods, and I'll do my best to help!
+    - text: Greetings! I'm the weather bot, ready to assist you with weather updates. Feel free to inquire about the weather conditions in various places and timeframes.
+    - text: Hello and welcome! I'm the weather bot at your service. If you have any questions about the weather, don't hesitate to ask.
   utter_thanks:
     - text: Welcome, will be always there to help!!!
+    - text: You're welcome! If you have any more questions or need assistance in the future, feel free to ask. I'm here to help!
+    - text: Glad I could assist you! If you ever need more information or have further inquiries, don't hesitate to reach out. I'm here 24/7.
+    - text: No problem at all! If there's anything else you'd like to know, just ask. I'm here to provide the information you need.
   utter_goodbye:
     - text: we can catch up again
+    - text: Farewell! Feel free to return whenever you have more questions or just want to chat. Take care!
+    - text: Until next time! If you ever need assistance or want to know more about the weather, don't hesitate to come back. Goodbye!
+    - text: Goodbye for now! If you ever want to continue our conversation or inquire about the weather, I'll be here. Stay safe!
   utter_iamabot:
     - text: I am a weather bot, created by Châu.
 actions:

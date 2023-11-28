@@ -1,0 +1,44 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-forecast_period",
+      "2": "I-forecast_period",
+      "3": "L-forecast_period",
+      "4": "U-forecast_period",
+      "5": "B-guess",
+      "6": "I-guess",
+      "7": "L-guess",
+      "8": "U-guess",
+      "9": "B-location",
+      "10": "I-location",
+      "11": "L-location",
+      "12": "U-location",
+      "13": "B-weather_type",
+      "14": "I-weather_type",
+      "15": "L-weather_type",
+      "16": "U-weather_type",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-forecast_period": 1,
+      "I-forecast_period": 2,
+      "L-forecast_period": 3,
+      "U-forecast_period": 4,
+      "B-guess": 5,
+      "I-guess": 6,
+      "L-guess": 7,
+      "U-guess": 8,
+      "B-location": 9,
+      "I-location": 10,
+      "L-location": 11,
+      "U-location": 12,
+      "B-weather_type": 13,
+      "I-weather_type": 14,
+      "L-weather_type": 15,
+      "U-weather_type": 16,
+      "O": 0
+    },
+    "num_tags": 17
+  }
+]

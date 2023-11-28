@@ -1,5 +1,6 @@
 version: "3.1"
 nlu:
+
   - intent: greet
     examples: |
       - hey
@@ -15,6 +16,16 @@ nlu:
       - goodmorning
       - goodevening
       - good afternoon
+      - hi there
+      - greetings
+      - howdy
+      - hola
+      - what's up
+      - hi everyone
+      - yo
+      - hey friend
+      - morning
+
   - intent: goodbye
     examples: |
       - cu
@@ -27,14 +38,36 @@ nlu:
       - see you around
       - bye bye
       - see you later
+      - take care
+      - farewell
+      - adios
+      - catch you later
+      - until next time
+      - so long
+      - see you soon
+      - goodbye for now
+      - take it easy
   - intent: affirm
     examples: |
       - yes
       - y
-      - indeed
+      - agreed
+      - yeah
+      - alright
+      - OK
+      - fine
+      - sure thing
+      - for sure
+      - absolutely right
+      - you bet
+      - no doubt
+      - affirmative - indeed
       - of course
       - that sounds good
       - correct
+      - absolutely
+      - sure
+      - definitel
   - intent: deny
     examples: |
       - no
@@ -44,6 +77,19 @@ nlu:
       - don't like that
       - no way
       - not really
+      - I disagree
+      - not at all
+      - I'm afraid not
+      - absolutely not
+      - I don't agree
+      - not true
+      - not happening
+      - I beg to differ
+      - I can't agree
+      - I doubt it
+      - I'm not sure about that
+      - nah
+      - not my thing
 
   - intent: ask_weather
     examples: |
@@ -97,6 +143,28 @@ nlu:
       - [when](guess) will have [rain](weather_type) in [next two days]{"entity": "forecast_period", "value": "next 2 days"}
   - intent: ask_location
     examples: |
+      - [Liverpool](location)
+      - [Paris](location)
+      - [New York City](location)
+      - [Tokyo](location)
+      - [Beijing](location)
+      - [Sydney](location)
+      - [Cairo](location)
+      - [Rio de Janeiro](location)
+      - [Dubai](location)
+      - [Barcelona](location)
+      - [Cape Town](location)
+      - [Los Angeles](location)
+      - [Moscow](location)
+      - [Berlin](location)
+      - [Rome](location)
+      - [Marrakech](location)
+      - [Singapore](location)
+      - [Toronto](location)
+      - [Istanbul](location)
+      - [Buenos Aires](location)
+      - [Milan](location) 
+      - [London](location)
       - [mumbai](location)
       - [delhi](location)
       - [bangalore](location)
@@ -161,6 +229,24 @@ nlu:
       - thanks
       - thank you
       - OK
+      - appreciate it
+      - thanks a lot
+      - thanks so much
+      - thanks a bunch
+      - thanks heaps
+      - thanks a million
+      - thanks a ton
+      - thanks for your help
+      - thanks a bunch
+      - thanks a million
+      - thanks a ton
+      - thanks for your help
+      - thanks for that
+      - thanks a million times
+      - thanks a bunches
+      - many thanks
+      - thanks again
+      
 
   - intent: bot_challenge
     examples: |
@@ -168,6 +254,21 @@ nlu:
       - are you a human?
       - am I talking to a bot?
       - am I talking to a human?
+      - prove you're not a robot
+      - can you pass the Turing test?
+      - tell me your identity
+      - are you real or artificial?
+      - are you automated?
+      - are you a machine?
+      - show me you're not a bot
+      - can bots have conversations?
+      - is this automated?
+      - are you a computer program?
+      - can you think like a human?
+      - do you have feelings?
+      - are you a living being?
+      - are you made of flesh and blood?
+      - are you sentient?
 
   - synonym: next 2 days
     examples: |
@@ -176,6 +277,21 @@ nlu:
       - next 2 day
       - next two day
       - next two days
+      - in the next two days
+      - within the next 48 hours
+      - upcoming 48 hours
+      - upcoming two days
+      - the following 2 days
+      - within the next couple of days
+      - upcoming days
+      - the 2 days ahead
+      - the subsequent 48 hours
+      - the upcoming two days
+      - next couple of days
+      - the 2 days to come
+      - the following two days
+      - the next 48 hours
+      - within the next pair of days
 
   - synonym: current
     examples: |
@@ -184,6 +300,22 @@ nlu:
       - todayss
       - ttodays
       - today
+      - at the moment
+      - present
+      - in the present time
+      - presently
+      - in this moment
+      - at this time
+      - right now
+      - in the current time
+      - as of now
+      - these days
+      - in the here and now
+      - at present
+      - in the now
+      - at the current time
+      - for today
+      
 
   - synonym: today
     examples: |
@@ -193,17 +325,90 @@ nlu:
       - later
       - later today
       - going to
+      - this day
+      - this date
+      - on this day
+      - this very day
+      - during the day
+      - in the course of today
+      - within today
+      - throughout the day
+      - on this date
+      - on this very day
+      - during this day
+      - this particular day
+      - within the day
+      - all day
+
   - synonym: tomorrow
     examples: |
       - tomorrow
       - tommorow
       - tomorow
       - next day
+      - next 24 hours
+      - on the morrow
+      - in the coming day
+      - the succeeding day
+      - next calendar day
+      - the subsequent day
+      - the upcoming day
+      - on the morrow
+      - in the coming day
+      - the succeeding day
+      - next calendar day
+      - the subsequent day
+      - the upcoming day
+      - within a day
 
   - synonym: temperature
     examples: |
       - temp
+      - degree
+      - weather
+      - climate
+      - atmospheric temperature
+      - heat level
+      - thermal condition
+      - thermometer reading
+      - ambient temperature
+      - warmth
+      - coldness
+      - hotness
+      - Fahrenheit
+      - Celsius
+      - Kelvin
+      - heat index
+      - chill factor
+      - mercury level
+      - weather conditions
+      - temp reading
 
   - synonym: humidity
     examples: |
       - humid
+      - moisture level
+      - dampness
+      - wetness
+      - mugginess
+      - dewiness
+      - water content
+      - humidity level
+      - atmospheric moisture
+      - wet atmosphere
+      - damp conditions
+      - wet air
+      - moisture content
+      - moisture in the air
+      - moistness
+      - relative humidity
+      - air dampness
+      - wet climate
+      - damp air
+      - humid conditions
+      - level of humidity
+
+
+
+
+
